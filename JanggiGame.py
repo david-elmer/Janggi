@@ -2218,6 +2218,9 @@ class Soldier(Piece):
 
 def main():
     game = JanggiGame()
+    game.make_move('e7', 'e6')  # blue player moves
+    game.make_move('e4', 'e5')  # red player moves
+
     game.print_board()
     print("Game state:    ", game.get_game_state())
     print("Current player:", game.get_current_player())
