@@ -31,4 +31,5 @@ Simply click on the piece you wish to move (which will then be highlighted) and 
 ![Janggi PyGame](images/janggi_pygame.gif)
 
 Game over:
+
 ![Janggi Game Over](images/janggi_game_over.png)
