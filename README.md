@@ -1,6 +1,5 @@
 # Janggi
 
----
 
 Janggi is a Korean strategy board game similar to chess. For more information check out the Wikipedia page [here](https://en.wikipedia.org/wiki/Janggi). Janggi is played with different pieces than western chess but with similar piece movement and a similar goal--to put the opponent's General in check. The board is a 9 x 10 grid with a special 'palace' area to which the General and Guards are restricted. If you know how to play chess you may quickly pick up Janggi!
 
