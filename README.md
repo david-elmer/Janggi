@@ -28,4 +28,7 @@ janggi_pygame.py uses PyGame to create a GUI for the game.
 
 Simply click on the piece you wish to move (which will then be highlighted) and then click on the destination square. If a move is not legal, the selection will be cleared, and you can start again.
 
+![Janggi PyGame](images/janggi_pygame.gif)
 
+Game over:
+![Janggi Game Over](images/janggi_game_over.png)

@@ -257,6 +257,7 @@ highlight = None
 running = True
 
 while running:
+    game_over = False
     # generate window fill, title, and background
     screen.fill(FILL_COLOR)
     screen.blit(background, (BG_X_OFFSET, BG_Y_OFFSET))
@@ -277,10 +278,10 @@ while running:
     # generate winner message
     else:
         if game.get_game_state() == 'BLUE_WON':
-            winner = font_player.render('BLUE WON', True, BLUE)
+            winner = font_winner.render('BLUE WON', True, BLUE)
         else:
-            winner = font_player.render('RED WON', True, RED)
-        screen.blit(winner, XY_PLAYER)
+            winner = font_winner.render('RED WON', True, RED)
+        game_over = True
 
     # event handling
     for event in pygame.event.get():
@@ -302,5 +303,9 @@ while running:
 
     # draw game pieces
     game.get_board().draw_board(screen)
+
+    # display winner if game over
+    if game_over:
+        screen.blit(winner, XY_WINNER)
 
     pygame.display.update()
